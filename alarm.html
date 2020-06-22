@@ -1,0 +1,48 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="alarm.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="alarm.js"></script>
+</head>
+<body>
+    <div class="row">
+        <button type="submit" onclick="addAlarm();">ADD ALARM</button>
+    <button type="reset" onclick="clearAlarm();">CLEAR</button>
+    </div>
+    <div class="row">
+        <label for="hours"> Hours
+            <input type="number" id="hours" min="0" max="23">
+        </label>
+    </div>
+        <div class="row">
+            <label for="minutes"> Minutes
+                <input type="number" id="minutes" min="00" max="59">
+            </label>
+        </div>
+        
+    </div>
+    <div class="row">
+        <label for="info"> Information
+            <input type="text" id="info">
+        </label>
+    </div>
+    <table border="1px solid">
+        <thead>
+            <tbody id="new-table" >
+            <tr>
+            <th>TIME</th>
+            <th>TIME</th>
+            <th>INFO</th>
+            <th>Remove</th>
+            </tr>
+            
+        </thead>
+    </table>
+   
+</body>
+</html>
